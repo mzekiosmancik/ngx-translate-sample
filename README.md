@@ -1,5 +1,7 @@
 # NgxTranslateSample
 
+![alt text](https://github.com/mzekiosmancik/ngx-translate-sample/blob/main/screenshots/ss1.png)
+
 The internationalization (i18n) library for Angular.
 
 Simple example using ngx-translate: https://stackblitz.com/github/ngx-translate/example

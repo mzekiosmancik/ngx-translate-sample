@@ -1,0 +1,23 @@
+{
+    "page":{
+        "headerTitle":"Bienvenido",
+        "status": "¡se está ejecutando!",
+        "title" : "Recursos",
+        "subTitle":"Aquí hay algunos enlaces para ayudarte a empezar:",
+        "resourceItem1":"Aprender Angular",
+        "resourceItem2":"Documentación de la CLI",
+        "resourceItem3":"Material angular",
+        "resourceItem4":"Blog angular",
+        "resourceItem5":"Herramientas de desarrollo angular",
+        "secondTitle" :"Siguientes Pasos",
+        "secondSubtitle" : "¿Qué quieres hacer ahora con tu aplicación?",
+        "actionItem1":"Nuevo Componente",
+        "actionItem2":"Material angular",
+        "actionItem3":"Agregar compatibilidad con PWA",
+        "actionItem4":"Agregar dependencia",
+        "actionItem5":"Ejecutar y observar pruebas",
+        "actionItem6":"Crear para producción",
+        "footerText":"¿Te encanta Angular?",
+        "footerLink":"Dale una estrella a nuestro repositorio"
+    }
+}

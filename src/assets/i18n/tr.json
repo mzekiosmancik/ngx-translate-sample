@@ -1,0 +1,23 @@
+{
+    "page":{
+        "headerTitle":"Hoşgeldiniz",
+        "status" : " çalışıyor!",
+        "title" : "Kaynaklar",
+        "subTitle":"İşte başlamanıza yardımcı olacak bazı bağlantılar:",
+        "resourceItem1":"Angular Öğren",
+        "resourceItem2":"CLI Dökümanları",
+        "resourceItem3":"Angular Materyal",
+        "resourceItem4":"Angular Blog",
+        "resourceItem5":"Angular Geliştirme Araçları",
+        "secondTitle" :"Sonraki Adım",
+        "secondSubtitle" : "Uygulamanızla bundan sonra ne yapmak istiyorsunuz?",
+        "actionItem1":"Yeni Bileşen",
+        "actionItem2":"Angular Materyal",
+        "actionItem3":"PWA Desteği Ekleyin",
+        "actionItem4":"Bağlılık Ekleyin",
+        "actionItem5":"Testleri Çalıştır ve İzle",
+        "actionItem6":"Canlı ortam için Derleme",
+        "footerText":"Anguları sevdin mi?",
+        "footerLink":"Gıt Repomuza bir yıldız verin"
+    }
+}

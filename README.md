@@ -30,11 +30,6 @@ Get the complete changelog here: https://github.com/ngx-translate/core/releases
             * [Example](#example-1)
     * [Parser](#parser)
         * [Methods](#methods)
-* [FAQ](#faq)
-    * [I'm getting an error `npm ERR! peerinvalid Peer [...]`](#im-getting-an-error-npm-err-peerinvalid-peer-)
-* [Plugins](#plugins)
-* [Editors](#editors)
-* [Additional Framework Support](#additional-framework-support)
 
 
 ## Installation
@@ -501,50 +496,3 @@ If you need it for some reason, you can use the `TranslateParser` service.
 - `getValue(target: any, key: string): any`:  Gets a value from an object by composed key
   `parser.getValue({ key1: { keyA: 'valueI' }}, 'key1.keyA') ==> 'valueI'`
 
-## FAQ
-
-#### I'm getting an error `npm ERR! peerinvalid Peer [...]`
-
-If you're using npm 2.x, upgrade to npm 3.x, because npm 2 doesn't handle peer dependencies well. With npm 2 you could only use fixed versions, but with npm 3 you can use `^` to use a newer version if available.
-
-If you're already on npm 3, check if it's an error (`npm ERR!`) or a warning (`npm WARN!`), warning are just informative and if everything works then don't worry !
-
-If you're using an old version of Angular and ngx-translate requires a newer version then you should consider upgrading your application to use the newer angular 2 version. There is always a reason when I upgrade the minimum dependencies of the library. Often it is because Angular had a breaking changes. If it's not an option for you, then check [the changelog](https://github.com/ngx-translate/core/releases) to know which version is the last compatible version for you.
-
-#### I want to hot reload the translations in my application but `reloadLang` does not work
-
-If you want to reload the translations and see the update on all your components without reloading the page, you have to load the translations manually and call `setTranslation` function which triggers `onTranslationChange`.
-
-## Plugins
-- [Localize Router](https://github.com/Greentube/localize-router) by @meeroslav: An implementation of routes localization for Angular. If you need localized urls (for example /fr/page and /en/page).
-- [.po files Loader](https://github.com/biesbjerg/ngx-translate-po-http-loader) by @biesbjerg: Use .po translation files with ngx-translate
-- [browser.i18n Loader](https://github.com/pearnaly/ngx-translate-browser-i18n-loader) by @pearnaly: loader for native translation files of browser extensions.
-- [ngx-translate-extract](https://github.com/biesbjerg/ngx-translate-extract) by @biesbjerg: Extract translatable strings from your projects
-- [MessageFormat Compiler](https://github.com/lephyrus/ngx-translate-messageformat-compiler) by @lephyrus: Compiler for ngx-translate that uses messageformat.js to compile translations using ICU syntax for handling pluralization, gender, and more
-- [ngx-translate-zombies](https://marketplace.visualstudio.com/items?itemName=seveseves.ngx-translate-zombies) by @seveves: A vscode extension that finds unused translation keys and shows them in a diff view (so called zombies).
-- [ngx-translate-multi-http-loader](https://github.com/denniske/ngx-translate-multi-http-loader) by @denniske: Fetch multiple translation files with ngx-translate.
-- [ngx-translate-cache](https://github.com/jgpacheco/ngx-translate-cache) by @jgpacheco: Simplified version of localize-router. If you are already using localize-router you don't need this extension. This extension is aimed only to facilitate language caching.
-- [ngx-translate-module-loader](https://github.com/larscom/ngx-translate-module-loader) by @larscom: Fetch multiple translation files (http) with ngx-translate. Each translation file gets it's own namespace out of the box and the configuration is very flexible.
-- [ngx-translate-all](https://github.com/irustm/ngx-translate-all) by @irustm: Automate translations for Angular projects.
-- [ngx-translate-migrate](https://github.com/irustm/ngx-translate-migrate) by @irustm: Automate migrations from ngx-translate to Angular i18n.
-- [ngx-translate-lint](https://github.com/svoboda-rabstvo/ngx-translate-lint) by @svoboda-rabstvo: Simple CLI tools for check ngx-translate keys in whole app
-- [ngx-translate-cut](https://github.com/bartholomej/ngx-translate-cut) by @bartholomej: Simple and useful pipe for cutting translations ✂️
-
-## Editors
-- [BabelEdit](https://www.codeandweb.com/babeledit) — translation editor for JSON files
-- [Translation Manager](https://translation-manager-86c3d.firebaseapp.com/) — Progressive web-app, translation editor for JSON files
-- [Crowdl.io](https://crowdl.io) — Free translation management and crowd-translations tool with support for JSON files
-- [ngx-translate-editor](https://github.com/svoboda-rabstvo/ngx-translate-editor) - Simple GUI for CRUD translate files of `ngx-translate`, which included `ngx-translate-lint`
-- [tl8.io](https://tl8.io) - A multi-platform application to enable the whole product team, including non-developers, to modify translations. WYSIWYG interface. Results can be downloaded as JSON and copied in the project as is.
-
-### Extensions
-
-#### VScode
-- [Generate Translation](https://marketplace.visualstudio.com/items?itemName=thiagocordeirooo.generate-translation) by [@thiagocordeirooo](https://github.com/thiagocordeirooo): A visual studio code extension for you to generate the translations without leaving the current file.
-- [Lingua](https://marketplace.visualstudio.com/items?itemName=chr33z.lingua-vscode&utm_source=www.vsixhub.com) by [@chr33z](https://github.com/chr33z): A visual studio code extension to help managing translations for ngx-translate - featuring inline translation lookup and in-place translation creation and editing.
-
-
-
-## Additional Framework Support
-
-* [Use with NativeScript](https://github.com/NathanWalker/nativescript-ng2-translate/issues/5#issuecomment-257606661)
